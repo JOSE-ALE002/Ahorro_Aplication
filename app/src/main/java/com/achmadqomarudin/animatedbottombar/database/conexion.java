@@ -9,11 +9,9 @@ import com.achmadqomarudin.animatedbottombar.controllers.operacionesTransaccione
 import com.achmadqomarudin.animatedbottombar.models.AbonoAhorro;
 import com.achmadqomarudin.animatedbottombar.models.Ahorro;
 
-public class conexion {
-    @Database(entities = {Ahorro.class, AbonoAhorro.class}, version = 1, exportSchema = false)
-    public abstract class dataBase extends RoomDatabase {
-        public abstract operacionesAhorro opAhorroDao();
-        public abstract operacionesMetaAhorro opAhorroMetaDao();
-        public abstract operacionesTransacciones opTransaccionesDao();
-    }
+@Database(entities = {Ahorro.class, AbonoAhorro.class}, version = 1, exportSchema = false)
+public abstract class conexion extends RoomDatabase {
+    public abstract operacionesAhorro op();
+    public abstract operacionesMetaAhorro op1();
+    public abstract operacionesTransacciones op2();
 }

@@ -9,7 +9,7 @@ public class AbonoAhorro {
     private int idAbonoAhorro;
     private int idAhorro;
     private Double cantidad_abono;
-    private String fecha_Abono;
+    //private String fecha_Abono;
 
     public AbonoAhorro(int idAbonoAhorro, int idAhorro, Double cantidad_abono) {
         this.idAbonoAhorro = idAbonoAhorro;

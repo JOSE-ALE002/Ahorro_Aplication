@@ -1,7 +1,9 @@
 package com.achmadqomarudin.animatedbottombar.models;
 
+import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+@Entity
 public class Ahorro {
     @PrimaryKey(autoGenerate = true)
     private int idAhorro;
